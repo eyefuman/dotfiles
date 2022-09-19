@@ -1,0 +1,32 @@
+[user]
+	name = eyefuman
+	email = eyefuman@gmail.com
+[github]
+	user = eyefuman
+[core]
+	quotepath = false
+	pager = less
+	excludesfile = ~/.gitignore
+	editor = "vim"
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	up = pull --rebase
+	hist = log --format=\"%h %ad | %s%d [%an]\" --graph --date=short
+	graph = log --graph --format=\"%x09%C(white)%ad%Creset %C(yellow)%h%Creset %s %C(cyan bold)[%an]%Creset %C(magenta reverse)%d%Creset\"
+[include]
+	path = .gitconfig.local
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
