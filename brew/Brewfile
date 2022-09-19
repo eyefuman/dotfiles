@@ -1,0 +1,19 @@
+# $ brew bundle dump
+# $ brew bundle cleanup
+
+########
+# tap
+########
+tap "homebrew/bundle"
+tap "homebrew/core"
+
+########
+# CLI
+########
+brew "openldap"
+brew "curl"
+brew "jq"
+brew "php"
+brew "pyenv"
+brew "wget"
+brew "xz"
